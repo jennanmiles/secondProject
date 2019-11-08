@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f3;
+}
+
+nav {
+/*  display: block;
+  position: fixed;
+  width: 100%;
+  background-color: #a99478;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100; */
+}
+nav .logo {
+  font-family: "Playfair Display", serif;
+  color: black;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+nav ul a.nav-link {
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+nav ul a.nav-link:hover, nav ul a.nav-link:visited {
+  text-decoration: none;
+}
+
+.contentWrapper {
+  position: relative;
+  margin-top: 100px;
+  padding: 5%;
+  box-sizing: border-box;
+  width: 75%;
+  margin: 100px auto 50px auto;
+}
+.contentWrapper.portfolio {
+  width: 100%;
+}
+.contentWrapper h1 {
+  color: white;
+  background-color: #5E7D8E;
+  font-size: 1.75em;
+  padding: 10px 20px;
+  margin: -50% auto 0 auto;
+  position: relative;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 300;
+  width: auto;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contentWrapper .myPhoto {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  border: 15px solid white;
+  box-sizing: border-box;
+}
+.contentWrapper .myPhoto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.contentWrapper p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1em;
+  line-height: 1.75em;
+  padding: 0;
+  margin: 1em auto;
+}
+.contentWrapper .portfolioWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+.contentWrapper .portfolioWrapper .portfolioPiece {
+  width: calc(100% / 3 - 4%);
+  height: 250px;
+  margin: 2%;
+  background-color: #ccb89d70;
+}
+.contentWrapper .portfolioWrapper .portfolioPiece .portText {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.contentWrapper form input, .contentWrapper form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin: 10px auto;
+  font-size: 1em;
+}
+.contentWrapper form input:focus, .contentWrapper form textarea:focus {
+  outline: none;
+  border: 2px solid #ccc;
+}
+.contentWrapper form .formLabels {
+  font-size: 1.25em;
+  margin: 1em auto 0 0;
+}
+.contentWrapper form button {
+  background-color: #ccb89d;
+  color: black;
+  padding: 10px;
+  border: none;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px auto;
+  position: relative;
+  font-size: 1em;
+  border: 2px solid #f6f6f3;
+}
+.contentWrapper form button:focus {
+  outline: none;
+}
+.contentWrapper form button:hover, .contentWrapper form button:visited, .contentWrapper form button:active {
+  border: 2px solid #ccc;
+  background-color: #a99478;
+  color: white;
+}
+
+footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+footer .copyright {
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  padding: 1em;
+  font-family: "Source Sans Pro", sans-serif;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+

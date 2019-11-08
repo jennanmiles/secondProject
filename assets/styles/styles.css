@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f3;
+}
+
+nav {
+  background-color: #a99478;
+  padding: 15px;
+}
+nav .logo {
+  font-family: "Playfair Display", serif;
+  color: black;
+  font-size: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  left: 20px;  
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  flex-direction: row;
+}
+
+nav ul a.nav-link {
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+nav ul a.nav-link:hover, nav ul a.nav-link:visited {
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  margin-top: 100px;
+  padding: 5%;
+  box-sizing: border-box;
+  margin: 100px auto 50px auto;
+}
+.container.portfolio {
+  width: 100%;
+  padding: 0;
+}
+.container h1 {
+  color: white;
+  background-color: #5E7D8E;
+  font-size: 1.75em;
+  padding: 10px 20px;
+  margin: -50% auto 0 auto;
+  position: relative;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 300;
+  width: auto;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container .myPhoto {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  border: 15px solid white;
+  box-sizing: border-box;
+}
+.container .myPhoto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.container p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1em;
+  line-height: 1.75em;
+  padding: 0;
+  margin: 1em auto;
+}
+.container .portfolioWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+.container .portfolioWrapper .portfolioPiece {
+  width: calc(100% / 3 - 4%);
+  height: 250px;
+  margin: 2%;
+  background-color: #ccb89d70;
+}
+.container .portfolioWrapper .portfolioPiece .portText {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.container form input, .container form textarea {
+
+}
+.container form input:focus, .container form textarea:focus {
+  outline: none;
+  border: 2px solid #ccc;
+}
+.container form .formLabels {
+  font-size: 1.25em;
+  margin: 1em auto 0 0;
+}
+.container form button {
+  background-color: #ccb89d;
+  border: none;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px auto;
+  position: relative;
+  border: 2px solid #f6f6f3; 
+}
+.container form button:focus {
+  outline: none;
+}
+.container form button:hover, .container form button:visited, .container form button:active {
+  border: 2px solid #ccc;
+  background-color: #a99478;
+  color: white;
+}
+
+footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+footer .copyright {
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  padding: 1em;
+  font-family: "Source Sans Pro", sans-serif;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 728px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    padding: 0;
+  }
+
+  .container .portfolioWrapper .portfolioPiece {
+    width: 90%;
+    margin: 15px auto;
+  }
+
+  .container .myPhoto {
+    width: 90%;
+  }
+}
